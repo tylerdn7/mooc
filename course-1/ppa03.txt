@@ -1,0 +1,39 @@
+Practice Programming Assignment (PPA 03)
+Happy Numbers: A number is called a happy number, if you repeat the process, of squaring the sum of the digits, till the value 1 is obtained. E.g. You need to do the following to perform this check: (a) compute the sum of the squares of its digits (b) if the resultant value is 1, then the number is a happy number, else execute point (a). If a number is not a happy number, there will be an endless loop/cycle to this execution. 
+
+Task: In this programming assignment, you are required to write code that checks whether the number is a happy number or not, for 10 cycles (iterations) only. 2 examples of happy numbers (limited to 10 cycles ) are given below:
+
+Example 1: Assume a number '19'
+
+Number	Computation	Result	Cycle / Iteration
+19	92 + 12	82	1
+82	22 + 82	68	2
+68	82 + 62	100	3
+100	02 + 02 + 12	1	4
+Stop computing further, as the Result obtained is 1. Hence, the number '19', is a happy number. We achieved this in 4 cycles only.
+ Example 2: Assume a number '3'
+
+Number	Computation	Result	Cycle
+3	32 	9	1
+9	92 	81	2
+81	12 + 82	65	3
+65	52 + 62	61	4
+61	12 + 62	37	5
+37	72 + 32	58	6
+58	82 + 52	89	7
+89	92 + 82	145	8
+145	52 + 42 + 12	42	9
+42	22 + 42	20	10
+Stop computing further, as we are allowed to compute for 10 cycles only. The resultant value after computing 10 cycles is 20
+  You are required to do the following:
+
+Find the sum of the digits of the number.
+Check the result obtained in point 1. If it is 1, assign value 1 to the variable 'finalNumber', else again execute point 1, till the number obtained is 1 or till the number of cycle increases to 10.
+Assign the iteration value to the variable 'cycle_no'.
+Click on the next unit (visible at the top of your screen), to follow the instructions and write your code in the space provided.
+
+Note: The 3 points given above should be read as:
+
+Find the sum of the squares of the digits of a number.
+Check the result obtained in point 1. If it is 1, assign value 1 to the variable 'finalNumber'. If it is not 1, then again execute point 1, till the number obtained is 1 or till the number of cycle increases to 10. Finally assign the resultant value obtained to the variable 'finalNumber'
+Assign the iteration value to the variable 'cycle_no'.
