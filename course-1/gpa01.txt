@@ -1,0 +1,82 @@
+FlipDigital: FlipDigital is a company that manufactures harddisks of various RPM (Revolutions Per Minute) to cater to the needs of all individuals. Usually, the life span of their harddisks is more than 10 years, i.e. It should work for atleast 10 years. Unfortunately, a serious bug was detected, due to which the RPM increases or decreases every year in the following manner: (a) multiply the number 323 to sum of the squares of the digits of the RPM,  (b) shift the digits of the RPM to the right by 1 position in a cyclic way, and finally (c) extract the last two digits of the new number obtained and add to the result obtained in 'a'. The final result (c) is the new RPM. 
+
+This issue is that if the RPM increases by a certain limit, then the hard disk crashes, which is also dangerous to the person who is using it. The maximum limit of the RPM of the hard disk is 8 times of the RPM, i.e. if RPM of harddisk is 1000, then the maximum RPM can be 1000 * 8 = 8000. This issue needs to be resolved before they release the harddisks to the general public. We have been given a contract to find out (based on the RPM) which harddisks will last for more than 10 years, and which will not. 
+
+Assume that the RPM is between 3524 and 8524 only, both inclusive.
+
+Task:  You are required to write code that does the following:-
+
+Find out the sum of the squares of the digits of the RPM
+Multiply the number obtained in (1) by 323
+Do a cyclic right shift of digits of the RPM i.e. if Number is 1234, after cyclic right shift, the number will be 4123. Thereafter, take the last two digits of the number obtained just now, and add it to the number obtained in point 2. Thus, obtaining a new RPM value.
+Do these steps till the number of years are 10 or the harddisk has reached the maximum RPM
+Example 1: Assume an RPM of 5524. So, the maximum limit of RPM is 5524 * 8 = 44192
+
+RPM	Years	   SSD	        A
+SSD * 323	               B
+Cyclic Right Shift	A + last 2 digits of B	Result 
+(Next RPM)
+5524	1	42 + 22 + 52 + 52
+= 16 + 4 + 25 + 25	70 * 323
+= 22610	4552	22610 + 52	22662
+22662	2	22 + 62 + 62 + 22+ 22
+= 4 + 36 + 36 + 4 + 4	84 * 323
+= 27132	22266	27132 + 66	27198
+27198	3	82 + 92 + 12 + 72 + 22
+= 64 + 81 + 1 + 49 + 4	199 * 323
+= 64277	82719	64277 + 19	64296
+Stop computing further as the maximum limit of RPM is 44192, and the RPM after 3 years is 64296
+Example 2: Assume an RPM of 7024. So, the maximum limit of RPM is 7024 * 8 = 56192
+
+RPM	Years	   SSD	        A
+SSD * 323	                B
+Cyclic Right Shift	A + last 2 digits of B	Result 
+(Next RPM)
+7024	1	42 + 22 + 02 + 72 
+= 69
+69 * 323
+= 22287	4702	22287 + 2	22289
+22289	2	92 + 82 + 22 + 22 + 22 
+= 157
+157 * 323
+= 50711	92228	50711 + 28	50739
+50739	3	92 + 32 + 72 + 02 + 52 
+= 164
+164 * 323
+= 52972	95073	52972 + 73	53045
+53045	4	52 + 42 + 02 + 32 + 52 
+= 75
+75 * 323
+= 24225	55304	24225 + 4	24229
+24229	5	92 + 22 + 22 + 42 + 22 
+= 109
+109 * 323
+= 35207	92422	35207 + 22	35229
+35229	6	92 + 22 + 22 + 52 + 32 
+= 123
+123 * 323
+= 39729	93522	39729 + 22	39751
+39751	7	12 + 52 + 72 + 92 + 32 
+= 165
+165 * 323
+= 53295	13975	53295 + 75	53370
+53370	8	02 + 72 + 32 + 32 + 52 
+= 92
+92 * 323
+= 29716	5337	29716 + 37	29753
+29753	9	32 + 52 + 72 + 92 + 22 
+= 168
+168 * 323
+= 54264	32975	54264 + 75	54339
+54339	10	92 + 32 + 32 + 42 + 52 
+= 140
+140 * 323
+= 45220	95433	45220 + 33	45253
+Stop computing, as 10 years have passed and still the RPM has not exceeded the maximum limit.
+You are required to do the following:
+
+Find out the sum of the squares of the digits of the RPM
+Multiply the number obtained in (1) by 323
+Do a cyclic right shift of digits of the RPM and take the last two digits of the number obtained just now, and add it to the number obtained in point 2. Thus, obtaining a new RPM value.
+Do these steps till the number of years are 10 or the harddisk has reached the maximum RPM
+Finally assign the modified value i.e. the final of RPM to the variable 'finalRPM'
