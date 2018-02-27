@@ -1,0 +1,50 @@
+A rational number is represented as numerator/denominator.  We need to identify whether two rational numbers are equal or not. For example, consider two rational numbers '1/4' and '4/16'. Both of them are equal, as, '4/16' if reduced to lowest terms is '1/4'.
+
+Consider the following structure 'rational' that has member variables 'numerator' and 'denominator'.
+
+struct rational { 
+   int numerator; 
+   int denominator; 
+} ;
+
+The main function is coded as shown below:
+
+int main() { 
+   int result; 
+   struct rational num1, num2; 
+   cout << "Enter Details of Number 1 " << endl; 
+   cout << "Enter Numerator :" << endl; 
+   cin >> num1.numerator; 
+   cout << "Enter Denominator :" << endl; 
+   cin >> num1.denominator; 
+   cout << "Enter Details of Number 2 " << endl; 
+   cout << "Enter Numerator :" << endl; 
+   cin >> num2.numerator; 
+   cout << "Enter Denominator :" << endl; 
+   cin >> num2.denominator; 
+   result = isEqual(num1, num2);     //to check rational 'num1' is equal to rational 'num2' 
+   if(result == true) 
+      cout << "Both rational numbers are equal" << endl; 
+   else 
+      cout << "Both rational numbers are not equal" << endl;    
+   return 0; 
+}
+
+You are required to write 2 functions:
+To find out whether the two rational numbers are equal or not, we need to write two functions 'reduce' and 'equal', as described below:
+
+Function 1: reduce
+This function has two parameters:
+
+struct rational *inputrational: *inputrational is a pointer to the structure rational, which is the actual rational number to be reduced
+struct rational *outputrational: *outputrational is a pointer to the structure rational, which will store the rational number in its lowest form
+Function 2: isEqual
+This function has two parameters:
+
+struct rational num1: 
+struct rational num2: 
+The function should do the following
+
+This function should call the function 'reduce' twice.
+Thereafter, the function should check whether both the rational numbers obtained in the lowest form are equal or not. If yes, then it should return boolean value 'true', else, it should a boolean value 'false'.
+In the 'main' program, the function 'isEqual' is called using two arguments, num1 and num2 which are  passed by reference, both of type 'struct rational'
