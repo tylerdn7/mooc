@@ -1,0 +1,17 @@
+Problem Definition: A student wants to use a 2-dimensional integer array in a program. However, he/she is forbidden to declare 2-dimensional arrays in the programs. Assume that the 2-dimensional integer array is of size m x n. 
+
+You are required to write the following two functions.
+
+Function 1:  'int * getArray1D(int n)': The function should return a 1D array to the function 'getArray2D' from where it is called
+
+Function 2: 'int **getArray2D((int m, int n, int **Aptr) ': The function should return a 2D array to the 'main' program(not shown). It should call the above function 'getArray1D' to get 1D array of size 'n'.
+
+Each of these functions may be assumed to return a pointer to an array that can be accessed even after the function returns.  
+
+The 'main' program makes a call to 'getArray2D' in this fashion:
+
+Array =  getArray2D(m,n,Array);
+
+where 'm' and 'n' are integer variables declared for defining the size of a 2D array named 'Array'
+
+The above two functions('getArray1D' and 'getArray2D') are to be written in the 'student.cpp' file.
