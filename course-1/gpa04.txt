@@ -1,0 +1,80 @@
+Problem Definition: A rational number is represented as numerator / denominator.  We need to identify whether two rational numbers are equal or not. For example, consider two rational numbers '1 / 4' and '4 / 16'. Both of them are equal, as, '4 / 16' if reduced to lowest terms is '1 / 4'.
+
+Consider the following structure 'rational' that has member variables 'numerator' and 'denominator'.
+
+struct rational { 
+   int numerator; 
+   int denominator; 
+} ;
+
+You are required to write 2 functions:
+Function 1: reduce
+
+This function has two parameters:
+
+struct rational *inputrational: *inputrational is a pointer to the structure rational, which is the actual rational number to be reduced
+struct rational *outputrational: *outputrational is a pointer to the structure rational, which will store the rational number in its lowest form
+The function should do the following
+
+It should reduce the number i.e. numerator and denominator to its lowest form, where the original number is stored in inputrational
+The reduced (output) number should be stored in outputrational.
+The function is given below, in which you need to write your code
+
+void reduce(struct rational *inputrational, struct rational *outputrational) {
+
+}
+
+Function 2: equal
+This function has two parameters:
+
+struct rational *rational_number1: *rational_number1 is a pointer to the structure rational, which denotes the first rational number
+struct rational *rational_number2: *rational_number2 is a pointer to the structure rational, which denotes the second rational number
+Note: The parameters given above are incorrect. It should be as follows
+   1. struct rational num1
+ 2. struct rational num2
+Special thanks to BeBedi_gsb for notifying this mistake
+
+The function should do the following
+
+This function should call the function 'reduce' twice. The first time with the first rational number, and the second time, with the second rational number.
+Thereafter, the function should check whether both the rational numbers obtained in the lowest form are equal or not. If yes, then it should return boolean value 'true', else, it should a boolean value 'false'.
+The function is given below, in which you need to write your code
+
+     bool equal (struct rational *rational_number1, struct rational *rational_number2) {
+
+     }
+Note: The function definition given above is incorrect. It should be as follows:
+      bool isEqual(struct rational num1, struct rational num2) {
+            //Write your solution code below this line
+
+      }
+Special thanks to BeBedi_gsb for notifying this mistake
+
+In the 'main' program, the function 'equal' is called using two arguments, num1 and num2 which are  passed by reference, both of type 'struct rational'
+
+Sample Examples are given below:
+Example 1
+  Details of Number 1 
+  Numerator :
+  3
+  Denominator :
+  9
+  Details of Number 2 
+  Numerator :
+  1
+  Denominator :
+  3
+  Both rational numbers are equal
+
+Example 2:
+  Details of Number 1 
+  Numerator :
+  1
+  Denominator :
+  4
+  Details of Number 2 
+  Numerator :
+  1
+  Denominator :
+  3
+  Both rational numbers are not equal
