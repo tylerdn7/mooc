@@ -1,0 +1,27 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis refers to a lung disease.
+
+1.  getrusage() returns resource usage statistics for the calling process, which is the sum of resources used by all threads in the process.
+
+2.  struct rusage has 16 members.
+
+3.  Cause value will change after the function ends.But passing the reference will give the actual value even after the function ends.
+
+4.  On each iteration it gets character by character until it reach EOF.Then it checks whether it is a digit or a character.
+
+5.  fgetc() will read only one character whereas fscanf() will read whatever it has told it to, 
+    and more if not careful. The internal file pointer will end up being moved relative to the number of bytes reads.
+
+6.  The primary purpose of constness is to provide documentation and prevent programming mistakes. 
+    Const allows to make it clear that something should not be changed. Moreover, it has the added benefit that 
+    anything that you declare const will in fact remain const short of the use of forceful methods. 
+    It's particularly useful to declare reference parameters to functions as const references.
+
+7.  Hashtable data structure was used to implement dictionary.c.Created a hashfunction which takes a string and returns a number
+    which used for the index of hashtable array.Every index leads to a linked list.Every linked list contains the words which's first character
+    is same.
+
+8.  It took 5 seconds to complete the running process.
+
+9.  Changed the hash function a bit and increase the hashtable array size.
+
+10. No.
