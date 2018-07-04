@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. Besides 4 × 4 (which are Game of Fifteen’s dimensions),the framework allows  3 × 3 dimensions.
+1. The game’s board represented with 2 dimensional array data structure.
+2. void greet(void) function used for greet the player at game’s start.
+3. void init(void),void draw(void),bool move(int tile),bool won(void).
