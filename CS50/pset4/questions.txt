@@ -1,0 +1,43 @@
+0.  In a bitmap file on a disk or a bitmap image in memory, the pixels can be defined by a varying number of bits.
+    The 1 bit per pixel (1bpp) format supports 2 distinct colors.
+    The 2 bit per pixel (2bpp) format supports 4 distinct colors.
+    The 4 bit per pixel (4bpp) format supports 16 distinct colors.
+    The 8 bit per pixel (8bpp) format supports 256 distinct colors.
+    The 16 bit per pixel (16bpp) format supports 65536 distinct colors.
+    The 24 bit per pixel (24bpp) format supports 16,777,216 distinct colors.
+    The 32 bit per pixel (32bpp) format supports 4,294,967,296 distinct colors.
+1.  GIF format supports animation.
+2.  In information technology lossy compression or irreversible compression is the class of data encoding methods that uses inexact 
+    approximations and partial data discarding to represent the content. On the other hand lossless compression or reversible compression
+    which does not degrade the data. The amount of data reduction possible using lossy compression is often much higher than through lossless
+    techniques.
+3.  JPEG is lossy compressed image format.
+4.  In most cases, however, delete or erase commands do not actually remove the file’s information from the hard disk. 
+    Although the precise notion of “erase” depends on the file system used, in most cases, deleting a file most often merely 
+    rewrites the metadata that pointed to the file, but leaves the disk blocks containing the file’s contents intact.
+5.  If all the addressable block in a hard disk is filled with ASCII NUL bytes (zeroes).
+    Basically overwrite the blocks with zeroes so that the main data couldn’t be recovered.
+6.  stdint.h is a header file in the C standard library introduced in the C99 standard library section 7.18
+    to allow programmers to write more portable code by providing a set of typedefs that specify exact-width integer types,
+    together with the defined minimum and maximum allowable values for each type, using macros.
+7.  uint8_t is an unsigned integer type which is 8 bits.It can store numbers from number range 0 to 255.
+    uint32_t is an unsigned integer type which is 32 bits.It can store numbers from number range 0 to 4,294,967,295.
+    int32_t is an signed integer type which is 32 bits.It can store numbers from number range −2,147,483,648 to 2,147,483,647.
+    uint16_t is an unsigned integer type which is 16 bits.It can store numbers from number range 0 to 65,535.
+    To work with these range of numbers the above data type uint8_t,uint32_t,int32_t,uint16_t would come in handy.
+8.  A BYTE is an 1 byte(8-bit) unsigned value that corresponds to a single octet in a network protocol.
+    A DWORD is a 4 bytes(32-bit) unsigned integer (range: 0 through 4294967295 decimal). 
+    A LONG is a 4 bytes(32-bit) signed integer, in twos-complement format (range: –2147483648 through 2147483647 decimal). 
+    A WORD is a 2 bytes(16-bit) unsigned integer (range: 0 through 65535 decimal).
+9.  The first two bytes of any BMP file must be the 14 and 40. Which corresponds to BITMAPFILEHEADER and BITMAPINFOHEADER.
+10. biSize is the number of bytes required by the structure and bfsize is Size of the BMP file.
+11. If the biHeight value is negative uncompressed bitmaps can be stored from the top to bottom.
+12. biBitCount.
+13. fopen might return NULL if operating system is out of memory.
+    or if we try to open a file in a directory for which we didn’t have the proper permissions.
+14. fread's third argument 1 means it is reading x amount of bytes 1 times. 
+    For example fread(p,x,1,in) here x is the amount of bytes and that amount of byte has been read one times. 
+15. 3
+16. fseek function moves the cursor in a file to a desired byte location.
+17. SEEK_CUR is move from current position of the file to required bytes position.
+18. Rick Astley.
