@@ -1,0 +1,25 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Opinion Lexicon: Negative
+; This file contains a list of NEGATIVE opinion words (or sentiment words).
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+absentee
+absurd
+absurdity
+absurdly
+absurdness
+abuse
+abused
+abuses
+abusive
+abysmal
+abysmally
+abyss
+accidental
+accost
+accursed
+accusation
+accusations
+accuse
+accuses
+accusing
+accusingly

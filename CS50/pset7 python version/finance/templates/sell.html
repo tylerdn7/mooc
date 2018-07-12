@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+{% block main %}
+
+    <table class="table table-striped" style="width:100%">
+      <tr>
+        <th>Symbol</th>
+        <th>Name</th> 
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Transaction Time</th>
+      </tr>
+    {% for i in p %}
+      <tr>
+        <td><b>{{ i.symbol }}</b></td>
+        <td><b>{{ i.symbol }}</b></td>
+        <td><b>{{ i.amount }}</b></td>
+        <td><b>{{ i.price }}</b></td>
+        <td><b>{{ i.time }}</b></td>
+      </tr>
+    {% endfor %}
+      <tr>
+        <td>CASH</td>
+        <td></td>
+        <td></td> 
+        <td></td>
+        <td>{{ q }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td> 
+        <td></td>
+        <td><b>{{ cash }}</b></td>
+      </tr>
+    </table>
+    <form action="{{ url_for('sell') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="amnt" placeholder="Amount" type="int"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Sell</button>
+            </div>
+        </fieldset>
+    </form>
+    
+{% endblock %}
